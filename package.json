@@ -1,0 +1,41 @@
+{
+    "name": "markdocs",
+    "version": "1.0.0",
+    "description": "another documentation generator based on markdown files.",
+    "main": "./src/index.js",
+    "scripts": {
+        "start": "concurrently \"npm run autoreload\" \"npm run dev\"",
+        "dev": "babel-node ./src/index.js --out-file ./build/bundle.js",
+        "autoreload": "autoreload-server -w \"**/**.{html,css,js,md}\" ./build 6006"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lucascassiano/markdocs.git"
+    },
+    "keywords": [
+        "markdown",
+        "css",
+        "html",
+        "documentation"
+    ],
+    "author": "lucascassiano",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lucascassiano/markdocs/issues"
+    },
+    "homepage": "https://github.com/lucascassiano/markdocs#readme",
+    "dependencies": {
+        "highlight.js": "^9.12.0",
+        "marked": "^0.3.12",
+        "node-watch": "^0.5.7",
+        "opn": "^5.2.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-es2016": "^6.24.1",
+        "babel-preset-latest": "^6.24.1",
+        "concurrently": "^3.5.1",
+        "nodemon": "^1.14.12",
+        "simple-autoreload-server": "^0.2.7"
+    }
+}
