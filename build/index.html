@@ -10,20 +10,45 @@
 
 <body>
     <div class="sidebar">
-        <div class="logo">
-            <img src="logo.svg" />
-            <div class="name">Mark Docs</div>
-            <div class="version">1.1.0</div>
-        </div>
-        <ul class="list">
-            <li classe"menu-item"><a href=#Introduction>Introduction</a></li>
+        <div class="sidebar-content">
+            <div class="logo">
+                <img src="logo.svg" />
+                <div class="name">Mark Docs</div>
+                <div class="version">1.1.0</div>
+            </div>
+            <ul class="list">
+                <li classe"menu-item"><a href=#Read-Me>Read Me</a></li>
+<li classe"menu-item"><a href=#Some-topic>Some topic</a></li>
+<li classe"menu-item"><a href=#test>test</a></li>
 
-        </ul>
+            </ul>
+        </div>
     </div>
 
     <div id="content">
-        <div class="topic" id="Introduction">
-<div class="topic-title">Introduction</div><br><div class="line"></div><h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>Hello</h1><p class="paragraph">lorem ipsum!</p><pre><code class="lang-js"><div class="code"><span class="hljs-keyword">var</span> a = <span class="hljs-number">11</span>;
+        <div class="topic" id="Read-Me">
+<div class="topic-title">Read Me</div><br><div class="line"></div><h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>markdocs</h1><p class="paragraph">another documentation generator based on markdown files.</p><h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>how run</h1><pre><code><div class="code"><span class="hljs-built_in">npm</span> install &amp;&amp; <span class="hljs-built_in">npm</span> start</div>
+</code></pre><p class="paragraph">open <a href="http://localhost:6060/index.html">localhost:6060/index.html</a>;</p><h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>content</h1><p class="paragraph">just write in plain markdown in the /content/ directory:</p><pre><code><div class="code">/<span class="hljs-attribute">content</span>/
+    <span class="hljs-number">0</span>_introduction<span class="hljs-selector-class">.md</span>
+    <span class="hljs-number">1</span>_install<span class="hljs-selector-class">.md</span>
+    ...
+    n_someTopic.md</div>
+</code></pre><h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>exporting</h1><p class="paragraph">just copy the /build/ folder to your directory</p><h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>customizing</h1><p class="paragraph">change the css in /build/ folder or the generated html.</p></div>
+<div class="topic" id="Some-topic">
+<div class="topic-title">Some topic</div><br><div class="line"></div><h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>Hello</h1><p class="paragraph">lorem ipsum!</p><pre><code class="lang-js"><div class="code"><span class="hljs-keyword">var</span> a = <span class="hljs-number">11</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span><span class="hljs-params">(a)</span></span>{
+    add something here
+    <span class="hljs-number">2</span>
+--&gt;}</div>
+</code></pre>
+<p class="paragraph">We can create named areas on the grid to put content into. To do this we first assign elements in our markup to a Grid Area, using the grid-area property.</p><p class="paragraph">We can then use the grid-template-areas property to describe where on the Grid these elements should sit.</p><p class="paragraph">Repeating the name of an area indicates that the area spans that grid track. Using a . or a sequence like .... indicates an empty track. Such as the very first cell on this grid.</p><pre><code class="lang-js"><div class="code"><span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span><span class="hljs-params">(a)</span></span>{
+    add something here
+}</div>
+</code></pre>
+<h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>H1</h1><h2><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>H2</h2><h3><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>H3</h3><h4><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>H4</h4><h5><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>H5</h5><h6><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>H6</h6><p class="paragraph">Alternatively, for H1 and H2, an underline-ish style:</p><h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>Alt-H1</h1><h2><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>Alt-H2</h2></div>
+<div class="topic" id="test">
+<div class="topic-title">test</div><br><div class="line"></div><h1><a name="head" class="anchor" href="#head"><span class="header-link"></span></a>Hello</h1><p class="paragraph">lorem ipsum!</p><pre><code class="lang-js"><div class="code"><span class="hljs-keyword">var</span> a = <span class="hljs-number">11</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span><span class="hljs-params">(a)</span></span>{
     add something here
     <span class="hljs-number">2</span>
