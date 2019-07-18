@@ -14,7 +14,7 @@ just write in plain markdown in the /content/ directory:
     0_introduction.md
     1_install.md
     ...
-    n_someTopic.md
+    n_Some topic Title.md
 ```
 
 # exporting
@@ -22,3 +22,8 @@ just copy the /build/ folder to your directory
 
 # customizing
 change the css in /build/ folder or the generated html.
+* lists
+* lists
+
+# Colors
+We used simple white and blue colors.
