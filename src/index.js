@@ -5,9 +5,7 @@ const watch = require('node-watch');
 const opn = require('opn');
 
 var renderer = new marked.Renderer();
-
 const about = require("../content/about.json");
-
 
 
 marked.setOptions({
